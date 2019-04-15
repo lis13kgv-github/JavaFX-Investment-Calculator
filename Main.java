@@ -34,6 +34,7 @@ VBox sm = new VBox(13);
   Label l1 = new Label("Investment Amount: ");
   Label l2 = new Label("Number of Years: ");
   Label l3 = new Label("Annual Interest Rate: ");
+  Label percent = new Label("%");
   Label l4 = new Label("Future Value: ");
 public void start(Stage pStage) throws Exception{
    JOptionPane.showMessageDialog(null, "Dear Ms. Mei Liang, " + "\n" + "Thanks for all your support in this course!" + "\n" + "\n" + "Yours sincerely," + "\n" + "Sun Young");
@@ -41,7 +42,7 @@ public void start(Stage pStage) throws Exception{
   BorderPane rootNode = new BorderPane();
   s1.getChildren().addAll(l1, t1);
   s2.getChildren().addAll(l2, t2);
-  s3.getChildren().addAll(l3, t3);
+  s3.getChildren().addAll(l3, t3, percent);
   s4.getChildren().addAll(l4, t4);
   t4.setEditable(false);
   HBox calculate = new HBox(10);
